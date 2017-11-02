@@ -1,0 +1,1 @@
+{"platforms": ["*"], "url": "https://github.com/DamnWidget/anaconda_php", "version": "0.1.6", "dependencies": [], "sublime_text": ">=3000", "description": "Anaconda.PHP adds PHP linting, PHP code standards checking and complexity/messing detector that will never freeze your Sublime Text 3"}
