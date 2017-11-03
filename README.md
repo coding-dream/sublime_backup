@@ -1,12 +1,15 @@
 ## Package Control安装
 
 **备份**
-点击 Packages（Preferences > Browse Packages），
-把该目录下内容拷贝一份，同步云端即可
+
+点击 Packages（Preferences > Browse Packages），把该目录下内容拷贝一份，同步云端即可
 
 **安装插件**
+
 按 Ctrl+` 调出console
+
 方式一：使用【package control组件】安装（先安装组件）
+
 ```	
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
@@ -81,9 +84,11 @@ https://packagecontrol.io/
 
 ## 强大的功能
 像Eclipse一样查找函数定义
-在方法或者某个类上面点击右键->
-选择goto_definition即可（这已经是sublime默认的功能）
+
+在方法或者某个类上面点击右键->选择goto_definition即可（这已经是sublime默认的功能）
+
 为了更加方便，我们设置了一个快捷键，到
+
 Preferences-> keyBindings->会弹出两个设置快捷键的文件，我们只修改右边那个，左边的是系统默认的，右边的是用户自己的，修改的会覆盖掉默认的某些快捷键，设计真好！
 
 ```
@@ -98,12 +103,11 @@ Preferences-> keyBindings->会弹出两个设置快捷键的文件，我们只�
 ## 定制属于自己的快捷键
 设置快捷键。在SublimeText里，打开Preferences -> Key Bindings - User。
 
-比如：修改快捷键为Eclipse
-在Preferences菜单选择Key Bindings，将下面的代码粘贴到Users文件内。
-https://segmentfault.com/a/1190000009797699
+比如：修改快捷键为Eclipse，在Preferences菜单选择Key Bindings，将下面的代码粘贴到Users文件内。
 
 ## 定制专属的编译器
 SublimeText3;完毕后上面选择:
+
 Build System–New Build System 输入：
 ```
 {
@@ -134,14 +138,19 @@ java %~n1
 ![安装后，将可以将常用中文编码转换成UTF-8](http://upload-images.jianshu.io/upload_images/26219-6872c20b77473a8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240/format/jpg)
 
 **Sublime Terminal**
+
 可以在当前文件位置打开终端
 
 **DocBlockr**
- 可以自动生成PHPDoc风格的注释。它支持的语言有Javascript, PHP, ActionScript, CoffeeScript, Java, Objective C, C, C++
+
+可以自动生成PHPDoc风格的注释。它支持的语言有Javascript, PHP, ActionScript, CoffeeScript, Java, Objective C, C, C++
 
 **MarkdownPreview**
+
 根据md文件生成html文件。
+
 按CTRL + B生成网页HTML；在最前面添加[TOC]自动生成目录；
+
 ```
 [TOC]
 
@@ -180,6 +189,7 @@ E36B85CC 84991F19 7575D828 470A92AB
 1. 创建一个MyCustomPlugin文件夹
 2. 创建一个MyPlugin.py文件，名字随意，SublimeText不是根据这个找命令的。
 该文件内每个类都是一个命令，但是类的命名有规定。
+
 如 
 ```
 import sublime
@@ -203,6 +213,7 @@ class SayHelloCommand(sublime_plugin.TextCommand):
 ]
 ```
 4. 如果你想给某个命令设置个菜单入口（可选），可以这么做。
+
 新建Main.sublime-menu文件，内容如下：
 ```
 [
@@ -219,12 +230,15 @@ class SayHelloCommand(sublime_plugin.TextCommand):
 ]
 ```
 5. 然后把这两个文件都放在MyCustomPlugin文件夹下，然后移动到SublimeText的Packages目录即可。
+
 如：我的SublimeText目录是`C:\Users\Administrator\AppData\Roaming\Sublime Text 3\Packages`
 
 一个基本插件已经开发完成，非常简单。
 
 
-官方接口
+**官方接口**
+
 英文版：http://www.sublimetext.com/docs/3/api_reference.html
+
 中文版 ：http://www.oschina.net/translate/sublime-text-plugin-api-reference
 
