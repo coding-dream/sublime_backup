@@ -21,6 +21,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 ## Python3输出中文的问题
 Python - Sublime Text 3 控制台不能输出中文的解决方法
+
 工具 -> 编译系统  -> 新编译系统
 ```
 {  
