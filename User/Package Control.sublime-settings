@@ -7,9 +7,14 @@
 	[
 		"anaconda_php",
 		"AutoPEP8",
+		"ColorPicker",
 		"ConvertToUTF8",
+		"DocBlockr",
 		"Jedi - Python autocompletion",
+		"Markdown Preview",
+		"MarkdownEditing",
 		"Package Control",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"Terminal"
 	]
 }

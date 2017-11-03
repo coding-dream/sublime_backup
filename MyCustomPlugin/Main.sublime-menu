@@ -1,0 +1,12 @@
+[
+    {
+        "caption": "我的插件",
+        "id": "x5pro0001",
+        "children":
+        [
+            {"id":"deeper001","caption": "获取时间","command": "get_time"},
+			{"id":"deeper002","caption": "打个招呼","command": "say_hello","args":{"message":"最近可好！"} },
+			{"id":"deeper003","caption": "生成Java模板","command": "create_templet"}
+        ]
+    }
+]

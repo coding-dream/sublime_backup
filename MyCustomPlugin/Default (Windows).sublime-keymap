@@ -1,0 +1,5 @@
+[
+	{ "keys": ["ctrl+shift+j"], "command": "get_time"},
+	{ "keys": ["ctrl+shift+k"], "command": "say_hello","args":{"message":"最近身体怎么样？"} },
+	{ "keys": ["ctrl+shift+l"], "command": "create_templet"}
+]
